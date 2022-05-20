@@ -8,7 +8,7 @@
   "env": {
     "P2_SSO_URL": "http://sso-api.platform.domain.url",
     "P2_SETTINGS_URL": "http://settings-api.platform.domain.url",
-    "P2_SSO_API_KEY": "string",
+    "P2_SSO_API_KEY": "apiKey",
     "P2_SSO_SERVICE_ID": "serviceId",
     "P2_SSO_SERVICE_NODE_ID": "nodeId",
     "KAFKA_TOPIC": "kafka.topic",
