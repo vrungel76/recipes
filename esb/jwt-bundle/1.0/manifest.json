@@ -15,7 +15,7 @@
     "KAFKA_TOPIC_PREFIX": "prefix",
     "KAFKA_BROKER_LIST": "broker1.domain:port,broker2.domain:port,broker3.domain:port",
     "KAFKA_USERNAME": "username",
-    "KAFKA_PASSWORD": "passord",
+    "KAFKA_PASSWORD": "password",
     "KAFKA_REQUEST_REQUIRED": 1,
     "#1": "Detailed Log, Possible values: 1,2,3,4,5,6,7",
     "KAFKA_LOG_LEVEL": 4,
