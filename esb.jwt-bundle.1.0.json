@@ -6,7 +6,7 @@
           "JwtBundle\\JwtBundle": ["all"]
         },
         "copy-from-recipe": {
-          "config/": "%CONFIG_DIR%/"
+          "config/": "%CONFIG_DIR%"
         },
         "files": {
           "config/packages/jwt.yaml": {
@@ -33,7 +33,8 @@
               "  permissions:",
               "    Group1:",
               "      - action: 'An action'",
-              "      description: 'Description of the action'"
+              "      description: 'Description of the action'",
+              ""
             ],
             "executable": false
           }
@@ -57,7 +58,7 @@
           "KAFKA_DEBUG_CONTEXTS": "' '"
         }
       },
-      "ref": "3a2578c5f4f7dbb7d8615fe8cd3338856fc316a1"
+      "ref": "18ff76841396105493457e7f41be6aa5ce2499ec"
     }
   }
 }
