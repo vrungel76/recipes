@@ -8,37 +8,6 @@
         "copy-from-recipe": {
           "config/": "%CONFIG_DIR%"
         },
-        "files": {
-          "config/packages/jwt.yaml": {
-            "contents": [
-              "jwt:",
-              "  platform:",
-              "    sso:",
-              "      url: '%env(P2_SSO_URL)%'",
-              "      api_key: '%env(P2_SSO_API_KEY)%'",
-              "      service_id: '%env(P2_SSO_SERVICE_ID)%'",
-              "      service_node_id: '%env(P2_SSO_SERVICE_NODE_ID)%'",
-              "    settings:",
-              "      url: '%env(P2_SETTINGS_URL)%'",
-              "  kafka:",
-              "    connection:",
-              "      topic_prefix: '%env(KAFKA_TOPIC_PREFIX)%'",
-              "      broker_list: '%env(KAFKA_BROKER_LIST)%'",
-              "      username: '%env(KAFKA_USERNAME)%'",
-              "      password: '%env(KAFKA_PASSWORD)%'",
-              "      request_required_acks: '%env(int:KAFKA_REQUEST_REQUIRED)%'",
-              "      log_level: '%env(int:KAFKA_LOG_LEVEL)%'",
-              "      debug_contexts: '%env(KAFKA_DEBUG_CONTEXTS)%'",
-              "    topic: '%env(KAFKA_TOPIC)%'",
-              "  permissions:",
-              "    Group1:",
-              "      - action: 'An action'",
-              "      description: 'Description of the action'",
-              ""
-            ],
-            "executable": false
-          }
-        },
         "env": {
           "P2_SSO_URL": "http://sso-api.platform.domain.url",
           "P2_SETTINGS_URL": "http://settings-api.platform.domain.url",
@@ -56,6 +25,37 @@
           "#2":"Detailed Producer debugging: broker,topic,msg. Consumer: consumer,cgrp,topic,fetch",
           "#3": "All log: all, Default: ' '",
           "KAFKA_DEBUG_CONTEXTS": "' '"
+        }
+      },
+      "files": {
+        "config/packages/jwt.yaml": {
+          "contents": [
+            "jwt:",
+            "  platform:",
+            "    sso:",
+            "      url: '%env(P2_SSO_URL)%'",
+            "      api_key: '%env(P2_SSO_API_KEY)%'",
+            "      service_id: '%env(P2_SSO_SERVICE_ID)%'",
+            "      service_node_id: '%env(P2_SSO_SERVICE_NODE_ID)%'",
+            "    settings:",
+            "      url: '%env(P2_SETTINGS_URL)%'",
+            "  kafka:",
+            "    connection:",
+            "      topic_prefix: '%env(KAFKA_TOPIC_PREFIX)%'",
+            "      broker_list: '%env(KAFKA_BROKER_LIST)%'",
+            "      username: '%env(KAFKA_USERNAME)%'",
+            "      password: '%env(KAFKA_PASSWORD)%'",
+            "      request_required_acks: '%env(int:KAFKA_REQUEST_REQUIRED)%'",
+            "      log_level: '%env(int:KAFKA_LOG_LEVEL)%'",
+            "      debug_contexts: '%env(KAFKA_DEBUG_CONTEXTS)%'",
+            "    topic: '%env(KAFKA_TOPIC)%'",
+            "  permissions:",
+            "    Group1:",
+            "      - action: 'An action'",
+            "      description: 'Description of the action'",
+            ""
+          ],
+          "executable": false
         }
       },
       "ref": "18ff76841396105493457e7f41be6aa5ce2499ec"
