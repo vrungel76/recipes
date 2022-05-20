@@ -7,9 +7,11 @@
   "branch": "master",
   "is_contrib": true,
   "_links": {
-    "repository": "https://github.com/vrungel76/recipes",
+    "repository": "github.com/vrungel76/recipes",
     "origin_template": "{package}:{version}@github.com/vrungel76/recipes:master",
-    "recipe_template": "https://api.github.com/repos/vrungel76/recipes/contents/{package_dotted}.{version}.json",
-    "recipe_template_relative": "{package_dotted}.{version}.json"
+    "recipe_template": "https://raw.githubusercontent.com/vrungel76/recipes/master/{package_dotted}.{version}.json",
+    "recipe_template_relative": "{package_dotted}.{version}.json",
+    "archived_recipes_template": "https://raw.githubusercontent.com/vrungel76/recipes/master/archived/{package_dotted}/{ref}.json",
+    "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
   }
 }
