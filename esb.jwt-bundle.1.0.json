@@ -52,7 +52,7 @@
             "  permissions:",
             "    Group1:",
             "      - action: 'An action'",
-            "      description: 'Description of the action'",
+            "        description: 'Description of the action'",
             ""
           ],
           "executable": false
