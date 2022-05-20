@@ -5,7 +5,7 @@
     ]
   },
   "branch": "master",
-  "is_contrib": true,
+  "is_contrib": false,
   "_links": {
     "repository": "github.com/vrungel76/recipes",
     "origin_template": "{package}:{version}@github.com/vrungel76/recipes:master",
