@@ -6,7 +6,7 @@
           "JwtBundle\\JwtBundle": ["all"]
         },
         "copy-from-recipe": {
-          "config/": "%CONFIG_DIR%"
+          "config/": "%CONFIG_DIR%/"
         },
         "env": {
           "P2_SSO_URL": "http://sso-api.platform.domain.url",
