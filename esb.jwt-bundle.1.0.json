@@ -30,7 +30,7 @@
       "files": {
         "config/packages/jwt.yaml": {
           "contents": [
-            "jwt:",
+            "platform-authorization:",
             "  platform:",
             "    sso:",
             "      url: '%env(P2_SSO_URL)%'",
