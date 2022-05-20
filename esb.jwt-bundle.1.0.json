@@ -24,7 +24,7 @@
           "KAFKA_LOG_LEVEL": 4,
           "#2":"Detailed Producer debugging: broker,topic,msg. Consumer: consumer,cgrp,topic,fetch",
           "#3": "All log: all, Default: ' '",
-          "KAFKA_DEBUG_CONTEXTS": "' '"
+          "KAFKA_DEBUG_CONTEXTS": " "
         }
       },
       "files": {
